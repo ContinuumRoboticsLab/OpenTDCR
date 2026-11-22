@@ -1,0 +1,72 @@
+[
+  {
+    "file": "XL-430_servo_spool_r10.stl",
+    "extent_mm": [
+      24.0,
+      23.999,
+      7.0
+    ],
+    "triangles": 7152,
+    "watertight": true
+  },
+  {
+    "file": "robot_mount.stl",
+    "extent_mm": [
+      57.0,
+      76.4,
+      91.2
+    ],
+    "triangles": 18632,
+    "watertight": true
+  },
+  {
+    "file": "front_plate v2.stl",
+    "extent_mm": [
+      129.6,
+      107.0,
+      14.4
+    ],
+    "triangles": 6316,
+    "watertight": true
+  },
+  {
+    "file": "franka_mount_wo_d405.stl",
+    "extent_mm": [
+      138.8,
+      32.0,
+      69.197
+    ],
+    "triangles": 18962,
+    "watertight": true
+  },
+  {
+    "file": "top_plate.stl",
+    "extent_mm": [
+      92.0,
+      107.0,
+      7.0
+    ],
+    "triangles": 9452,
+    "watertight": true
+  },
+  {
+    "file": "base_plate.stl",
+    "extent_mm": [
+      135.6,
+      107.0,
+      4.0
+    ],
+    "triangles": 7456,
+    "watertight": true
+  },
+  {
+    "file": "u2d2_small_mount.stl",
+    "extent_mm": [
+      60.9,
+      9.0,
+      62.3
+    ],
+    "triangles": 2520,
+    "watertight": true
+  }
+]

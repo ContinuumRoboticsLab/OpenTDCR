@@ -1,0 +1,16 @@
+{
+  "host": "tracker-hostname.invalid",
+  "port": 8765,
+  "configuration_reviewed": false,
+  "sensor_to_base": {
+    "rotation": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]],
+    "translation_mm": [0.0, 0.0, 0.0]
+  },
+  "tip": {
+    "mode": "exactly_one"
+  },
+  "timeout_s": 0.2,
+  "open_timeout_s": 5.0,
+  "max_frame_age_s": 0.25,
+  "frame_period_s": 0.02
+}

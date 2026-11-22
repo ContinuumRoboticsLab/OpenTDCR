@@ -1,0 +1,17 @@
+{
+  "name": "opentdcr-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --directory dist",
+    "check": "node --check dist/app.js",
+    "build:local": "node build-local.mjs"
+  },
+  "dependencies": {
+    "three": "0.181.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

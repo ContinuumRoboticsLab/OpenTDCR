@@ -1,0 +1,14 @@
+# OpenTDCR
+
+A release candidate for tendon-driven continuum robot hardware and simple Python teleoperation, from the Continuum Robotics Lab, University of Toronto.
+
+- [Getting started](guide.html): package install, dry-run, hardware and sensor interface.
+- [Release status](release-notes.html): verified contents, missing hardware information and licensing status.
+- [Source repository](https://github.com/ContinuumRoboticsLab/OpenTDCR): clean source with README, AGENTS.md, docs, tests, CAD, and examples.
+- [Research project](https://continuumroboticslab.github.io/opencr-mujoco/): companion paper and original physics demo.
+
+The webpage has an automatically moving, illustrative constant-curvature backbone with three optional draggable Clarke-coordinate pads. The scroll-driven CAD view lays out 26 component groups, including sixteen spools extracted from disconnected solids in the original servo mesh. Printed plates and spools sit at the front; the motor bank sits to the side. All original CAD triangles are preserved. The flexible backbone is absent from that CAD. A separate scroll story illustrates input, coordinates, tendon motion, and tip motion. The generalized Clarke mapping cycles through 3, 4, 6, and 8 equally spaced tendons. Haptic input is an adapter-extension concept; the released input paths are keyboard and wired DualSense. Both views are explanatory visualizations, not physics simulation. The package defaults to dry run; never enable physical motors without explicit user authorization and reviewed device configuration. Hardware licensing and bench validation remain pending. Source archive contains no internal project Git history or lab recordings.
+
+Clarke coordinate reference: Grassmann and Burgner-Kahrs (2025), https://arxiv.org/abs/2503.12265. Source repository: https://github.com/ContinuumRoboticsLab/OpenTDCR. Project webpage: https://continuumroboticslab.github.io/OpenTDCR/.
+
+Calibration: `tdcr calibrate` preserves the loosen, measured-tip threshold, countback, common adjustment, and reference-capture sequence. Thresholds and countbacks are configurable; sensors implement a generic measurement contract, with Lyra as an optional adapter. Default calibration runs use synthetic measurements. See repository docs/calibration.md. Acknowledgement: Kyum Lee, Chengnan Shentu, Chloe Pogue, Jessica Burgner-Kahrs, ICRA 2025, https://doi.org/10.1109/ICRA55743.2025.11128689.

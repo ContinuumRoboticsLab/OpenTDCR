@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="OpenTDCR: modular actuation hardware and simple teleoperation for tendon-driven continuum robots. A Continuum Robotics Laboratory project.">
+<meta name="theme-color" content="#ffffff"><title>OpenTDCR — Open hardware for continuum robotics</title>
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+<a class="lab-identity" href="https://crl.utm.utoronto.ca/" target="_blank" rel="noopener"><img src="assets/identity/crl-logo.png" alt="Continuum Robotics Laboratory, University of Toronto"></a>
+<nav aria-label="Main navigation"><a href="#assembly-story">Design</a><a href="#teleoperation-story">Teleoperation</a><a href="#research">Projects</a></nav>
+<a class="header-project" href="https://www.opencontinuumrobotics.com/" target="_blank" rel="noopener">Open CR Project</a>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="project-title">
+<div class="hero-heading"><h1 id="project-title">OpenTDCR</h1><p class="hero-description">Open-source hardware and teleoperation<br>for tendon-driven continuum robots.</p></div>
+<div class="hero-demonstration">
+<div class="robot-stage"><div id="motion-view" aria-label="Animated illustration of a three-segment tendon-driven continuum robot"></div><p id="motion-status" class="view-status" role="status"></p></div>
+<aside class="segment-controls" aria-label="Segment bending controls">
+<div class="controls-heading"><span>Clarke coordinates</span><button id="motion-toggle" class="quiet-button" aria-pressed="false">Pause motion</button></div>
+<div class="segment-control">
+<div class="clark-pad" data-segment="0" tabindex="0" role="group" aria-label="Base segment Clarke coordinates" aria-describedby="motion-help">
+<svg viewBox="0 0 120 120" aria-hidden="true"><circle class="pad-field" cx="60" cy="60" r="48"/><path class="pad-axes" d="M12 60h96M60 12v96"/><line class="pad-vector" x1="60" y1="60" x2="60" y2="60"/><circle class="pad-origin" cx="60" cy="60" r="2"/><circle class="pad-handle" cx="60" cy="60" r="6"/></svg>
+</div><div class="coordinate-label"><h3>Base</h3><p>q<sub>x</sub> <output class="coord-x">0.00</output><span>mm</span></p><p>q<sub>y</sub> <output class="coord-y">0.00</output><span>mm</span></p></div>
+</div>
+<div class="segment-control">
+<div class="clark-pad" data-segment="1" tabindex="0" role="group" aria-label="Middle segment Clarke coordinates" aria-describedby="motion-help">
+<svg viewBox="0 0 120 120" aria-hidden="true"><circle class="pad-field" cx="60" cy="60" r="48"/><path class="pad-axes" d="M12 60h96M60 12v96"/><line class="pad-vector" x1="60" y1="60" x2="60" y2="60"/><circle class="pad-origin" cx="60" cy="60" r="2"/><circle class="pad-handle" cx="60" cy="60" r="6"/></svg>
+</div><div class="coordinate-label"><h3>Middle</h3><p>q<sub>x</sub> <output class="coord-x">0.00</output><span>mm</span></p><p>q<sub>y</sub> <output class="coord-y">0.00</output><span>mm</span></p></div>
+</div>
+<div class="segment-control">
+<div class="clark-pad" data-segment="2" tabindex="0" role="group" aria-label="Tip segment Clarke coordinates" aria-describedby="motion-help">
+<svg viewBox="0 0 120 120" aria-hidden="true"><circle class="pad-field" cx="60" cy="60" r="48"/><path class="pad-axes" d="M12 60h96M60 12v96"/><line class="pad-vector" x1="60" y1="60" x2="60" y2="60"/><circle class="pad-origin" cx="60" cy="60" r="2"/><circle class="pad-handle" cx="60" cy="60" r="6"/></svg>
+</div><div class="coordinate-label"><h3>Tip</h3><p>q<sub>x</sub> <output class="coord-x">0.00</output><span>mm</span></p><p>q<sub>y</sub> <output class="coord-y">0.00</output><span>mm</span></p></div>
+</div>
+<p id="motion-help">Hover to hold. Drag to bend. Move away to resume.</p>
+</aside>
+</div>
+<div class="hero-foot"><p>Illustrative motion · <a href="https://arxiv.org/abs/2503.12265" target="_blank" rel="noopener" title="Grassmann and Burgner-Kahrs (2025), Clarke Coordinates Are Generalized Improved State Parametrization for Continuum Robots">Clarke coordinates</a> in mm</p></div>
+</section>
+<section id="assembly-story" class="assembly-story" aria-label="Explore the modular assembly as you scroll">
+<div id="assembly-stage" class="assembly-stage">
+<div class="assembly-copy">
+<h2>Modular and<br>easy to print</h2>
+<p>Print the frame, mounts, and tendon spools.</p>
+<div class="scroll-cue"><span>Scroll to lay out the parts</span><div id="assembly-progress" role="progressbar" aria-label="Assembly separation" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div></div>
+</div>
+<div class="assembly-visual"><div id="assembly-view" aria-label="Supplied actuation assembly, separating into its component groups as you scroll"><img id="assembly-fallback" src="assets/assembly-reference.png" alt="Reference illustration of the actuation frame and continuum robot" hidden></div><p id="assembly-status" role="status" class="view-status">Loading the assembly…</p><p class="assembly-caption">3D-printed parts + off-the-shelf servo motors</p></div>
+</div>
+</section>
+<section id="teleoperation-story" class="teleoperation-story" aria-labelledby="teleoperation-title">
+<div id="teleoperation-stage" class="teleoperation-stage">
+<div class="teleoperation-copy">
+<h2 id="teleoperation-title">Teleoperation</h2>
+<div class="teleoperation-steps">
+<article class="teleoperation-step is-active" data-step="0"><h3>Input</h3><p>Use a keyboard or joystick. Add other devices, such as haptic inputs, through an adapter.</p></article>
+<article class="teleoperation-step" data-step="1" aria-hidden="true" inert><h3>Coordinates</h3><p>Two Clarke coordinates set the bend of each segment.</p></article>
+<article class="teleoperation-step" data-step="2" aria-hidden="true" inert><h3>Tendons</h3><p>The Clarke transform automatically coordinates any number of tendons, starting with three.</p></article>
+<article class="teleoperation-step" data-step="3" aria-hidden="true" inert><h3>Actuation</h3><p>Motor motion moves the robot tip along a path.</p></article>
+</div>
+<div class="teleoperation-sequence" aria-label="Teleoperation stages"><span data-phase="0">Input</span><i></i><span data-phase="1">Coordinates</span><i></i><span data-phase="2">Tendons</span><i></i><span data-phase="3">Actuation</span></div>
+<div id="teleoperation-progress" class="story-progress" role="progressbar" aria-label="Teleoperation sequence" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+</div>
+<div class="teleoperation-visual"><div id="teleoperation-view" aria-label="Animated illustration of input, segment coordinates, tendon motion, and tip motion"></div><p class="teleoperation-caption">Illustrative control sequence</p></div>
+</div>
+</section>
+<section id="research" class="research-section"><div class="section-heading"><h2>Code and projects</h2></div>
+<div class="research-list">
+<a href="https://github.com/ContinuumRoboticsLab/OpenTDCR" target="_blank" rel="noopener"><div><h3>OpenTDCR</h3><p>Hardware files and teleoperation code.</p></div><span class="research-action">GitHub</span></a>
+<a href="https://continuumroboticslab.github.io/opencr-mujoco/" target="_blank" rel="noopener"><div><h3>OpenCR-MuJoCo</h3><p>TDCR simulation in MuJoCo, from our CoRL 2026 paper.</p></div><span class="research-action">Project & demo</span></a>
+<a href="https://www.opencontinuumrobotics.com/" target="_blank" rel="noopener"><div><h3>Open Continuum Robotics Project</h3><p>Guides and articles on continuum robotics.</p></div><span class="research-action">Visit project</span></a>
+</div></section>
+</main>
+<footer><div class="footer-lab"><img src="assets/identity/crl-logo.png" alt="Continuum Robotics Laboratory"><p>University of Toronto</p></div><a class="opencr-identity" href="https://www.opencontinuumrobotics.com/" target="_blank" rel="noopener"><img src="assets/identity/opencr-logo.png" alt="Open Continuum Robotics Project"></a><div class="footer-links"><a href="https://crl.utm.utoronto.ca/" target="_blank" rel="noopener">The laboratory</a><a href="https://github.com/ContinuumRoboticsLab" target="_blank" rel="noopener">GitHub</a><a href="https://arxiv.org/abs/2606.22397" target="_blank" rel="noopener">Paper</a></div></footer>
+<p class="acknowledgements">Acknowledgements: <a href="https://www.cs.toronto.edu/~cshentu/" target="_blank" rel="noopener">Chengnan Shentu</a>, <a href="https://kyumlee.com/" target="_blank" rel="noopener">Kyum Lee</a>, <a href="https://puspita-dewi.github.io/" target="_blank" rel="noopener">Puspita Triana Dewi</a>, and <a href="https://crl.utm.utoronto.ca/jbk/" target="_blank" rel="noopener">Jessica Burgner-Kahrs</a> (PI).</p>
+<script type="module" src="app.js"></script>
+</body></html>

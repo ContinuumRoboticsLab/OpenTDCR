@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "file": "crl-logo.png",
+      "organization": "Continuum Robotics Laboratory, University of Toronto",
+      "source_url": "https://crl.utm.utoronto.ca/assets/images/CRLab%20logo_dark_1_large.png",
+      "source_page": "https://crl.utm.utoronto.ca/",
+      "retrieved_on": "2026-11-21",
+      "width": 1732,
+      "height": 321,
+      "format": "PNG",
+      "mode": "RGBA",
+      "transparent": true,
+      "modified": false,
+      "bytes": 162913,
+      "sha256": "42f31bd06b913ad7ee0a3690113297caafef9053ffc50c7121e1b0e1abd99681",
+      "usage": "Official logo used to identify and link to the originating laboratory or project. Original colors and proportions preserved."
+    },
+    {
+      "file": "opencr-logo.png",
+      "organization": "Open Continuum Robotics Project",
+      "source_url": "https://www.opencontinuumrobotics.com/assets/images/openCRProject_logo_header.png",
+      "source_page": "https://www.opencontinuumrobotics.com/",
+      "retrieved_on": "2026-11-21",
+      "width": 866,
+      "height": 108,
+      "format": "PNG",
+      "mode": "RGBA",
+      "transparent": true,
+      "modified": false,
+      "bytes": 43972,
+      "sha256": "a015f5116561a75596a423b1cf43d065e270d51c9c8b16605dd581893340d930",
+      "usage": "Official logo used to identify and link to the originating laboratory or project. Original colors and proportions preserved."
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "source": "STLs/assembly.step",
+  "sourceSha256": "5d99afa804f6e3e74081735aa2e1deedd7189ce4319b75902e56e042207896f0",
+  "asset": "assembly.glb",
+  "assetSha256": "f6fdccbe5b2d9d4bd80ba5e0bf35fc9ba57c76683bb10e2f2a49576910b9ccd2",
+  "sourceBoundsMm": {
+    "min": [
+      -195.800000000001,
+      -67.25,
+      -64.5
+    ],
+    "max": [
+      41.45,
+      66.75000235482541,
+      27.50388982211263
+    ],
+    "size": [
+      237.25000000000102,
+      134.00000235482543,
+      92.00388982211263
+    ]
+  },
+  "gltfUnits": "meters",
+  "gltfAxes": "Y up; original CAD -X maps to +Y; original +Y maps to +X; original +Z unchanged",
+  "transform": {
+    "x": "(CAD_y - bounds_center_y) / 1000",
+    "y": "(bounds_max_x - CAD_x) / 1000",
+    "z": "(CAD_z - bounds_center_z) / 1000"
+  },
+  "meshCount": 410,
+  "triangleCount": 315146,
+  "byteLength": 8359288,
+  "tessellation": {
+    "linearUnit": "millimeter",
+    "linearDeflectionType": "absolute_value",
+    "linearDeflection": 0.4,
+    "angularDeflection": 0.5
+  },
+  "groups": [
+    {
+      "name": "servos",
+      "sourceMeshes": 381,
+      "triangles": 226760,
+      "sourceNames": [
+        "SOLID",
+        "B3B-EH(Mirror) (1)",
+        "ORCA_v1_PCB_Connector v1(Mirror) (1)",
+        "B3B-EH(Mirror)(Mirror)",
+        "ORCA_v1_PCB_Connector v1(Mirror)(Mirror)",
+        "B3B-EH",
+        "ORCA_v1_PCB_Connector",
+        "B3B-EH(Mirror)",
+        "ORCA_v1_PCB_Connector v1(Mirror)",
+        "SHELL"
+      ]
+    },
+    {
+      "name": "base_plate",
+      "sourceMeshes": 1,
+      "triangles": 3812,
+      "sourceNames": [
+        "base_plate"
+      ]
+    },
+    {
+      "name": "front_plate",
+      "sourceMeshes": 1,
+      "triangles": 4100,
+      "sourceNames": [
+        "front_plate"
+      ]
+    },
+    {
+      "name": "front_plate v2(Mirror)",
+      "sourceMeshes": 1,
+      "triangles": 4100,
+      "sourceNames": [
+        "front_plate v2(Mirror)"
+      ]
+    },
+    {
+      "name": "transition_frame_v4",
+      "sourceMeshes": 2,
+      "triangles": 10748,
+      "sourceNames": []
+    },
+    {
+      "name": "franka_adapter_wu2d2",
+      "sourceMeshes": 16,
+      "triangles": 16970,
+      "sourceNames": [
+        "JST-B4B-EH-A.PRT.1",
+        "JST-B3B-EH-A.PRT.1",
+        "Board",
+        "39281023.prt",
+        "JST-B3B-EH-A.PRT",
+        "JST-B4B-EH-A.PRT",
+        "JST-B4B-PH-K-S.PRT",
+        "MICRO_USB_2_0_CONNECTOR__AB_REC.PRT",
+        "PCB_U2D2.PRT",
+        "U2D2_CASING.PRT",
+        "SOLID"
+      ]
+    },
+    {
+      "name": "vertebra_base_v5",
+      "sourceMeshes": 1,
+      "triangles": 27438,
+      "sourceNames": [
+        "vertebra_base_v5"
+      ]
+    },
+    {
+      "name": "fan mount",
+      "sourceMeshes": 5,
+      "triangles": 9426,
+      "sourceNames": [
+        "stat",
+        "bearing",
+        "rotor",
+        "O-ring",
+        "SOLID"
+      ]
+    },
+    {
+      "name": "base_plate v8(Mirror)",
+      "sourceMeshes": 1,
+      "triangles": 3812,
+      "sourceNames": [
+        "base_plate v8(Mirror)"
+      ]
+    },
+    {
+      "name": "SOLID",
+      "sourceMeshes": 1,
+      "triangles": 7980,
+      "sourceNames": [
+        "SOLID"
+      ]
+    }
+  ],
+  "notes": [
+    "Literal tessellation of the supplied actuation assembly; no geometry was invented.",
+    "A long flexible backbone is absent from this assembly; a browser bending demonstration must be labeled illustrative.",
+    "CAD appearance colors retained where available; fallback gray and PBR surface response are presentation choices.",
+    "Contains supplier component geometry. Review redistribution rights before public release."
+  ],
+  "optimization": {
+    "tool": "@gltf-transform 4.2.1",
+    "operations": [
+      "weld",
+      "dedup",
+      "quantize",
+      "prune"
+    ],
+    "positionBits": 16,
+    "normalBits": 10,
+    "extension": "KHR_mesh_quantization (supported directly by Three.js GLTFLoader)",
+    "note": "Topology unchanged; quantization precision is finer than the STEP tessellation tolerance."
+  },
+  "compressedAsset": {
+    "asset": "assembly-optimized.glb",
+    "byteLength": 1996152,
+    "sha256": "4f4259cd23d6752f8ebc61bc6f30c51ba77d45b7bd7a8286ae144ddcbaa93702",
+    "extension": "EXT_meshopt_compression",
+    "loader": "GLTFLoader.setMeshoptDecoder(MeshoptDecoder)"
+  }
+}

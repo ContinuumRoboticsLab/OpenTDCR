@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opentdcr"
+version = "0.1.0"
+description = "Configurable tendon-driven continuum robot teleoperation and sensor interfaces"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Continuum Robotics Laboratory, University of Toronto"}]
+dependencies = ["numpy>=1.23,<3"]
+
+[project.urls]
+Homepage = "https://continuumroboticslab.github.io/OpenTDCR/"
+Repository = "https://github.com/ContinuumRoboticsLab/OpenTDCR"
+Issues = "https://github.com/ContinuumRoboticsLab/OpenTDCR/issues"
+
+[project.optional-dependencies]
+hardware = ["dynamixel-sdk>=3.7,<4"]
+gamepad = ["hidapi>=0.14,<1"]
+lyra = ["ndicapi>=3.7.6,<4"]
+
+[project.scripts]
+tdcr = "opentdcr.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

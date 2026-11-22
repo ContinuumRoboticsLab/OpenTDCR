@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "Please cite the OpenTDCR release used and the relevant research paper: Lee et al. (ICRA 2025) for calibration, Shentu et al. (CoRL 2026) for simulation. Release metadata will be completed at publication."
+type: software
+url: "https://continuumroboticslab.github.io/OpenTDCR/"
+repository-code: "https://github.com/ContinuumRoboticsLab/OpenTDCR"
+title: "OpenTDCR: hardware designs and simple teleoperation for tendon-driven continuum robots"
+authors:
+  - name: "Continuum Robotics Laboratory, University of Toronto"
+license: MIT
+abstract: "A configurable teleoperation package and hardware release candidate. The MIT field describes the software; hardware licensing is pending as documented in hardware/LICENSING.md."
+references:
+  - type: article
+    title: "Do Rigid-Body Simulators Dream of Soft Robots? Learning Contact-Rich Manipulation for Tendon-Driven Continuum Robots"
+    authors:
+      - family-names: Shentu
+        given-names: Chengnan
+      - family-names: Baldassini
+        given-names: Nicholas
+      - family-names: Zheng
+        given-names: Tongjia
+      - family-names: Rao
+        given-names: Priyanka
+      - family-names: Burgner-Kahrs
+        given-names: Jessica
+    year: 2026
+    doi: 10.48550/arXiv.2606.22397
+    url: "https://arxiv.org/abs/2606.22397"
+  - type: conference-paper
+    title: "Automating Tension Calibration for Tendon-Driven Continuum Robots: A Low-Cost Approach Towards Consistent Teleoperation"
+    authors:
+      - family-names: Lee
+        given-names: Kyum
+      - family-names: Shentu
+        given-names: Chengnan
+      - family-names: Pogue
+        given-names: Chloe
+      - family-names: Burgner-Kahrs
+        given-names: Jessica
+    collection-title: "2025 IEEE International Conference on Robotics and Automation (ICRA)"
+    year: 2025
+    doi: 10.1109/ICRA55743.2025.11128689
+    url: "https://doi.org/10.1109/ICRA55743.2025.11128689"

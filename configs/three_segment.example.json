@@ -1,0 +1,16 @@
+{
+  "name": "Generic three-segment example; verify every value on your build",
+  "tendons_per_segment": [3, 3, 3],
+  "tendon_radius_mm": [3.0, 3.0, 3.0],
+  "tendon_angle_offset_rad": [0.0, -0.5235987756, -1.0471975512],
+  "max_bend_rad": [0.7853981634, 0.7853981634, 0.7853981634],
+  "servo_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "spool_radius_mm": [10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0],
+  "servo_direction": [1, 1, 1, 1, 1, 1, 1, 1, 1],
+  "max_tendon_travel_mm": 8.0,
+  "max_tendon_speed_mm_s": 2.0,
+  "keyboard_step_mm": 0.1,
+  "baudrate": 3000000,
+  "hardware_reviewed": false,
+  "sensor_max_age_s": 0.25
+}

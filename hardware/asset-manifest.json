@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "release_name": "OpenTDCR",
+  "hardware_reference": "hardware/cad/assembly.step",
+  "note": "Exact source copies; filename association does not certify STL-to-assembly revision compatibility. Hardware license and supplier CAD redistribution remain to be confirmed.",
+  "assets": [
+    {
+      "path": "hardware/cad/XL-430_servo_spool_r10.stl",
+      "source": "STLs/XL-430_servo_spool_r10.stl",
+      "bytes": 357684,
+      "sha256": "9678a41b64b9e2446123c822362fba1018849de301e00d5eed38da812431a7d6",
+      "license_status": "maintainer_review_required"
+    },
+    {
+      "path": "hardware/cad/assembly.step",
+      "source": "STLs/assembly.step",
+      "bytes": 11988071,
+      "sha256": "5d99afa804f6e3e74081735aa2e1deedd7189ce4319b75902e56e042207896f0",
+      "license_status": "maintainer_review_required"
+    },
+    {
+      "path": "hardware/cad/base_plate.stl",
+      "source": "STLs/base_plate.stl",
+      "bytes": 372884,
+      "sha256": "5ea55c72ef273d9ec7fdc575dcde2c46ed0050f7602f31e958c57b680c6258be",
+      "license_status": "maintainer_review_required"
+    },
+    {
+      "path": "hardware/cad/franka_mount_wo_d405.stl",
+      "source": "STLs/franka_mount_wo_d405.stl",
+      "bytes": 948184,
+      "sha256": "0b7c332d867eef2fd474deb5642683ae6c8f247b5500a8866d512a19115711d8",
+      "license_status": "maintainer_review_required"
+    },
+    {
+      "path": "hardware/cad/front_plate v2.stl",
+      "source": "STLs/front_plate v2.stl",
+      "bytes": 315884,
+      "sha256": "d351be9540349e2beb787150896c478202844a6fcf8fad20ca1c6d863aaccf49",
+      "license_status": "maintainer_review_required"
+    },
+    {
+      "path": "hardware/cad/robot_mount.stl",
+      "source": "STLs/robot_mount.stl",
+      "bytes": 931684,
+      "sha256": "f324c27ac96a2ba6595c755783039c2e77e3ff4ed30146132f6c9462e52ac4c5",
+      "license_status": "maintainer_review_required"
+    },
+    {
+      "path": "hardware/cad/top_plate.stl",
+      "source": "STLs/top_plate.stl",
+      "bytes": 472684,
+      "sha256": "4b7e98d0f6393ade82212a896f90b878de33bdc028404b765d471270020fb43b",
+      "license_status": "maintainer_review_required"
+    },
+    {
+      "path": "hardware/cad/u2d2_small_mount.stl",
+      "source": "STLs/u2d2_small_mount.stl",
+      "bytes": 126084,
+      "sha256": "d22f3aa0e417f4aed55d28154f3bc7faa5884e43dd7c38b976348ce528623e64",
+      "license_status": "maintainer_review_required"
+    },
+    {
+      "path": "docs/images/add_pcb.png",
+      "source": "doc/add_pcb.png",
+      "bytes": 389143,
+      "sha256": "d71800dd2db229b419205c37438192f7c55069c3946d8320deed30c31b6b5708",
+      "license_status": "existing_repository_documentation"
+    },
+    {
+      "path": "docs/images/add_robot.png",
+      "source": "doc/add_robot.png",
+      "bytes": 332762,
+      "sha256": "1566c1d619e84209f29d5c898e9385ee49345aa0494a9a0235ef12b9033cff0d",
+      "license_status": "existing_repository_documentation"
+    },
+    {
+      "path": "docs/images/add_servo.png",
+      "source": "doc/add_servo.png",
+      "bytes": 550568,
+      "sha256": "9c1e3c9912dbb205c5f4388b71300d3e99615ee1a6b95d710978ff69af73fbc8",
+      "license_status": "existing_repository_documentation"
+    },
+    {
+      "path": "docs/images/add_spool.png",
+      "source": "doc/add_spool.png",
+      "bytes": 869675,
+      "sha256": "9b1d730260a60029ecf9bbaf55e26b5347c98ab96aeda857c5cc97394032e23c",
+      "license_status": "existing_repository_documentation"
+    },
+    {
+      "path": "docs/images/add_u2d2.png",
+      "source": "doc/add_u2d2.png",
+      "bytes": 690656,
+      "sha256": "73b954f3cf09f656b9af25d24bd9493b6c444cfb60abb126a245d3e2d0aea182",
+      "license_status": "existing_repository_documentation"
+    }
+  ]
+}

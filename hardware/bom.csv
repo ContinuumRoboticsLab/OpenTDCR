@@ -1,0 +1,20 @@
+item,component,quantity_status,specification_to_confirm,evidence,notes
+ACT-01,XL-430-style servo assemblies,16 modeled occurrences,"Confirm physical model, quantity and assigned function",assembly.step,CAD count only; not a verified purchasing count
+ACT-02,Tendon spool,One per used tendon,Nominal 10 mm radius; verify effective radius,cad/XL-430_servo_spool_r10.stl,Not every assembly actuator is mapped to a tendon
+MECH-01,Bottom frame plate,2 per earlier guide,Verify revision and quantity,cad/base_plate.stl,Earlier guide; reconcile with STEP
+MECH-02,Front frame plate,2 per earlier guide,Verify revision and quantity,cad/front_plate v2.stl,Earlier guide; reconcile with STEP
+MECH-03,Top frame plate,2 per earlier guide,Verify revision and quantity,cad/top_plate.stl,Earlier guide; reconcile with STEP
+MECH-04,Robot transition adapter,To verify,Match transition_frame_v4 in assembly,cad/robot_mount.stl,File equivalence unverified
+MECH-05,Franka/U2D2 frame adapter,To verify,Optional mounting choice; verify exact assembly part,cad/franka_mount_wo_d405.stl,File equivalence unverified
+MECH-06,U2D2 mount,To verify,Match case and assembly version,cad/u2d2_small_mount.stl,File equivalence unverified
+MECH-07,Vertebra base / fan mount / mirror plate,To verify,Export and validate custom components,assembly.step,No individually matched mesh supplied
+ELEC-01,ROBOTIS U2D2,To verify,Confirm interface model and cable,assembly.step,Supplier source and rights review
+ELEC-02,ROBOTIS U2D2 Power Hub Board,To verify,Confirm variant and power path,assembly.step,Supplier source and rights review
+ELEC-03,Servo connector PCB,To verify,Supply schematic/layout/pinout or replacement,assembly.step,Manufacturing sources not supplied
+ELEC-04,Servo cables and USB cable,To verify,"Length, pinout and connector type",Existing build photos,Purchasing specification pending
+ELEC-05,Servo power supply and cutoff,To verify,Ratings depend on confirmed model and load,Not specified,Purchasing specification pending
+FAST-01,M3 nuts and M3x8/10/14 screws,To verify,Map each length to its location,Existing build guide,Quantities and grades not supplied
+FAST-02,M2x8 screws,To verify,Spool and tendon fastening per earlier guide,Existing build guide,Verify fit and engagement
+ROBOT-01,Flexible backbone,Not supplied in STEP,"Material, diameter, length and attachment",Not specified,Required for a complete robot
+ROBOT-02,Spacer disks / robot body modules,Not supplied in STEP,"Geometry, spacing, material and count",Not specified,Required for a complete robot
+ROBOT-03,Tendons and terminations,To verify,"Material, diameter, routing and length",Not specified,Required for a complete robot

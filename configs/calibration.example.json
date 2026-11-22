@@ -1,0 +1,10 @@
+{
+  "loosen_amount_mm": 1.0,
+  "movement_threshold_mm": 0.5,
+  "movement_countback_mm": 0.1,
+  "pull_step_mm": 0.05,
+  "max_pull_mm": 2.0,
+  "search_start_mm": -1.0,
+  "settle_s": 0.05,
+  "tendon_timeout_s": 30.0
+}
