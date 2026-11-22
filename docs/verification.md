@@ -22,8 +22,16 @@ The backbone start matches the top-face center of the supplied `vertebra_base_v5
 
 ## Sensor-independent calibration update
 
-Reinstalled the editable package and ran all 102 tests without skips. Ran the installed `tdcr calibrate` command with the example robot/calibration configurations, a temporary local JSON report, and same-session scripted teleoperation (`1 w 2 a home q`): nine synthetic tendon searches completed and the report recorded the newly captured reference. The illustrative Lyra config was rejected before device access because it is not reviewed. Package modules also parse with Python 3.10 grammar; Python 3.10 runtime remains covered by the configured CI matrix rather than this local Python 3.14 run.
+Reinstalled the editable package and ran all 102 tests without skips. Ran the installed `tdcr calibrate` command with the example robot/calibration configurations, a temporary local JSON report, and same-session scripted teleoperation (`1 w 2 a home q`): nine synthetic tendon searches completed and the report recorded the newly captured reference. The illustrative Lyra config was rejected before device access because it is not reviewed. Package modules also parse with Python 3.10 grammar; Python 3.10 and 3.12 runtime checks subsequently passed in the publication CI run below.
 
 The Lyra adapter tests inject native API responses and bounded worker behavior; no physical tracker, optional SDK, or robot was used. The adapter supports a reviewed fixed sensor-to-base transform, not the legacy moving reference-body tracker. Physical motion thresholds, countbacks, timing, marker isolation, repeatability, and actual tendon tension still require bench validation. Same-frame observations retain their original timestamp, and calibration decisions wait for post-motion acquisition.
 
 MIT software attribution names the Continuum Robotics Laboratory, University of Toronto, while retaining the inherited 2024 Chengnan Shentu notice. Hardware and supplier-CAD permissions remain separately documented.
+
+## Public repository and GitHub Pages
+
+Published on 2026-11-21 (America/Los_Angeles): [repository](https://github.com/ContinuumRoboticsLab/OpenTDCR) and [project webpage](https://continuumroboticslab.github.io/OpenTDCR/). The repository began with a new root commit, `3f57aadb91955b83ed24af313ef80e351bf6b8af`, containing 109 allowlisted source files and no parent commits. Its history is independent of the internal project.
+
+[GitHub Actions](https://github.com/ContinuumRoboticsLab/OpenTDCR/actions/runs/44991007126) passed all 102 tests on Python 3.10 and 3.12, plus installed CLI inspection, keyboard dry-run, sensor example, and calibration-to-teleoperation dry-run. The [Pages deployment](https://github.com/ContinuumRoboticsLab/OpenTDCR/actions/runs/44991007166) succeeded with HTTPS. Browser verification confirmed live CAD rendering, the 16 separated spools, the GitHub link, and no warning/error console messages.
+
+The published tree remains a hardware release candidate: publication does not establish the pending hardware specifications, supplier-CAD rights, or physical bench results listed in the release checklist.

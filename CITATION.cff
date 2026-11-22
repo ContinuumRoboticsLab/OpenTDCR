@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the OpenTDCR release used and the relevant research paper: Lee et al. (ICRA 2025) for calibration, Shentu et al. (CoRL 2026) for simulation. Release metadata will be completed at publication."
+message: "Please cite the OpenTDCR release used and the relevant research paper: Lee et al. (ICRA 2025) for calibration, Shentu et al. (CoRL 2026) for simulation. Include the release version or commit identifier used."
 type: software
 url: "https://continuumroboticslab.github.io/OpenTDCR/"
 repository-code: "https://github.com/ContinuumRoboticsLab/OpenTDCR"

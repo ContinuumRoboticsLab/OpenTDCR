@@ -1,6 +1,6 @@
 # Release provenance and scope
 
-OpenTDCR was prepared as a standalone tree from the internal `crl_tdcr_teleop` project. The original project and its untracked work were preserved. The public tree is designed to be exported without the internal repository's Git history.
+OpenTDCR was prepared as a standalone tree from the internal `crl_tdcr_teleop` project. The original project and its untracked work were preserved. The public repository starts from a new root commit and contains none of the internal repository's Git history. See [publication verification](verification.md#public-repository-and-github-pages).
 
 ## Retained material
 

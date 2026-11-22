@@ -36,7 +36,7 @@ The static webpage lives in `website/dist/`. Preview it with `python3 -m http.se
 
 For CAD conversion, use explicit release-relative paths: `node tools/cad/convert-step.cjs hardware/cad/assembly.step website/dist/assets/cad`, then `node tools/cad/optimize-glb.mjs website/dist/assets/cad` (install locked dependencies with `npm ci --prefix tools/cad`). Refresh provenance whenever geometry changes.
 
-Package with `python tools/package_release.py --output /tmp/OpenTDCR-source.zip`. Keep generated release archives, caches, local settings, and dependencies out of the source payload. Do not publish until the recorded license and hardware-release items have been resolved by the maintainers.
+Package with `python tools/package_release.py --output /tmp/OpenTDCR-source.zip`. Keep generated release archives, caches, local settings, and dependencies out of the source payload. This repository is published as a hardware release candidate. Keep unresolved licensing and hardware-release items visible; do not describe them as verified or complete without maintainer evidence.
 
 ## Documentation
 
