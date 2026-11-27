@@ -1,6 +1,6 @@
 # Hardware licensing status
 
-The software MIT notice credits the Continuum Robotics Laboratory, University of Toronto, and preserves the original 2024 Chengnan Shentu notice for inherited code. This software attribution does not change the licensing of CAD or supplier components. No new hardware license has been selected in this release candidate.
+The software MIT notice credits the Continuum Robotics Laboratory and Governing Council of the University of Toronto, and preserves the original 2024 Chengnan Shentu notice for inherited code. This software attribution does not change the licensing of CAD or supplier components. No new hardware license has been selected in this release candidate.
 
 Before public redistribution, the maintainers must identify which CAD objects they own, select the license for their mechanical designs, and confirm rights for any third-party objects included in the STEP assembly. A name or product number in a CAD file is evidence of provenance to investigate; it is not permission to redistribute.
 

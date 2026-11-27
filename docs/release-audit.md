@@ -36,6 +36,6 @@ New software checks use fake transports, synthetic USB controller reports, and s
 
 ## Software attribution and calibration research
 
-The public software is attributed to the Continuum Robotics Laboratory, University of Toronto. Its MIT license also retains the original Chengnan Shentu notice to preserve inherited-code provenance and the [MIT notice requirement](https://opensource.org/license/mit). This update does not relicense supplier CAD.
+The public software is attributed to the Continuum Robotics Laboratory and Governing Council of the University of Toronto. Its MIT license also retains the original Chengnan Shentu notice to preserve inherited-code provenance and the [MIT notice requirement](https://opensource.org/license/mit). This update does not relicense supplier CAD.
 
 The calibration work acknowledges Lee, Shentu, Pogue, and Burgner-Kahrs, ICRA 2025, DOI [10.1109/ICRA55743.2025.11128689](https://doi.org/10.1109/ICRA55743.2025.11128689). The title, authors, conference, year, and DOI were verified from the [author-hosted paper](https://www.cs.toronto.edu/~cshentu/pdf/tension_calib.pdf); the [lab's ICRA report](https://crl.utm.utoronto.ca/2025/06/06/icra.html) confirms its presentation. The new implementation retains the later lab workflow's measured-position threshold and tendon-length countback approach through a sensor-independent interface. The paper's performance numbers are not claims about this implementation.

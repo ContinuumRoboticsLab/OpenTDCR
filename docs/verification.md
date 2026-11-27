@@ -26,7 +26,7 @@ Reinstalled the editable package and ran all 102 tests without skips. Ran the in
 
 The Lyra adapter tests inject native API responses and bounded worker behavior; no physical tracker, optional SDK, or robot was used. The adapter supports a reviewed fixed sensor-to-base transform, not the legacy moving reference-body tracker. Physical motion thresholds, countbacks, timing, marker isolation, repeatability, and actual tendon tension still require bench validation. Same-frame observations retain their original timestamp, and calibration decisions wait for post-motion acquisition.
 
-MIT software attribution names the Continuum Robotics Laboratory, University of Toronto, while retaining the inherited 2024 Chengnan Shentu notice. Hardware and supplier-CAD permissions remain separately documented.
+MIT software attribution names the Continuum Robotics Laboratory and Governing Council of the University of Toronto, while retaining the inherited 2024 Chengnan Shentu notice. Hardware and supplier-CAD permissions remain separately documented.
 
 ## Public repository and GitHub Pages
 

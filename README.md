@@ -116,7 +116,7 @@ Choose an appropriate output path for your system. Review the [release checklist
 
 ## License and attribution
 
-The software is released under the [MIT license](LICENSE) by the Continuum Robotics Laboratory, University of Toronto. The notice names the lab for this release and retains the original 2024 Chengnan Shentu notice for inherited code. Hardware and embedded supplier CAD require a separate, explicit licensing review; see [hardware/LICENSING.md](hardware/LICENSING.md). A software MIT notice alone is not a confirmed license grant for every object in the assembly.
+The software is released under the [MIT license](LICENSE) by the Continuum Robotics Laboratory and Governing Council of the University of Toronto. The notice names the lab for this release and retains the original 2024 Chengnan Shentu notice for inherited code. Hardware and embedded supplier CAD require a separate, explicit licensing review; see [hardware/LICENSING.md](hardware/LICENSING.md). A software MIT notice alone is not a confirmed license grant for every object in the assembly.
 
 ## Local webpage
 
