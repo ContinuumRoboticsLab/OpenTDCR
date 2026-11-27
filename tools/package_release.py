@@ -27,6 +27,8 @@ def main():
                 continue
             # Match local-data patterns in .gitignore, including descendants of
             # ignored directories. Keep the explicitly tracked website output.
+            if relative.parts[:2] == ('docs', 'announcements'):
+                continue
             if 'dist' in relative.parts and relative.parts[:2] != ('website', 'dist'):
                 continue
             if relative.parts[0] == 'configs' and path.name.endswith('.local.json'):

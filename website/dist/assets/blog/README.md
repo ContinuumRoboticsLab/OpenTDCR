@@ -1,0 +1,5 @@
+# Media sources
+
+`opentdcr-motion.gif` and `opentdcr-motion.mp4` render the supplied actuation assembly CAD with an illustrative continuum backbone using OpenTDCR’s `motion.js`, `studio.js`, and `cad.js`. The 600 × 600 animation runs for approximately 14.21 seconds and loops captured motion forward and backward. It is not measured robot behavior. Credit: OpenTDCR, Continuum Robotics Laboratory, University of Toronto.
+
+`tdcr-hardware.jpg` is copied unchanged from the [OpenCR-MuJoCo poster](https://continuumroboticslab.github.io/opencr-mujoco/assets/compressed/all_rollouts_cylinder_task_blurred_poster.jpg), including its existing blur. It shows a physical TDCR in the companion learned-policy cylinder-manipulation experiment, not a demonstration of OpenTDCR’s teleoperation code. Credit: [OpenCR-MuJoCo](https://continuumroboticslab.github.io/opencr-mujoco/), Continuum Robotics Laboratory, University of Toronto. The corresponding [experiment video](https://continuumroboticslab.github.io/opencr-mujoco/media/policies/all_rollouts_cylinder_task_blurred.mp4) remains hosted by that project.

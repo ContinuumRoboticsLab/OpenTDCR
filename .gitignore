@@ -28,3 +28,6 @@ configs/**/*.local.json
 .agents/
 .codex/
 website/standalone/
+
+# Announcement drafts stay outside the public release
+/docs/announcements/

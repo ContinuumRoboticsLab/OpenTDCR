@@ -38,7 +38,7 @@ This checklist separates a usable software release candidate from a verified, re
 
 - [x] Verify that the archive contains only the standalone public release tree and excludes internal Git history, experimental logs, sensor recordings, and local configuration. The public repository starts with root commit `3f57aadb91955b83ed24af313ef80e351bf6b8af`.
 - [x] Review the webpage's CAD rendering against the assembly and label illustrative kinematics separately from physics simulation.
-- [x] Replace draft announcement link placeholders with the final repository and webpage destinations. The announcements remain unposted drafts.
+- [x] Keep announcement drafts outside the public repository and source archive.
 - [ ] Confirm citation metadata and contributor acknowledgments before posting.
 - [ ] Tag the reviewed source, archive the hardware release, and retain the manifest hashes with the release.
 

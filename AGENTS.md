@@ -40,4 +40,4 @@ Package with `python tools/package_release.py --output /tmp/OpenTDCR-source.zip`
 
 ## Documentation
 
-Update the relevant guide when changing a public command, config field, unit, or sensor contract. `docs/release-checklist.md` tracks unverified release requirements; close items only with recorded evidence. Draft announcements in `docs/announcements/` must not be presented as already published.
+Update the relevant guide when changing a public command, config field, unit, or sensor contract. `docs/release-checklist.md` tracks unverified release requirements; close items only with recorded evidence. Keep announcement drafts outside this public repository; do not commit them or include them in release archives.
